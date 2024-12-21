@@ -1,4 +1,5 @@
 import './App.css';
+import IconDisplay from './components/iconDisplay/IconDisplay';
 import StatusIndicator from './components/statusIndicator/StatusIndicator';
 import TaskDescription from './features/task/desciption/TaskDescription';
 import TaskTitle from './features/task/title/TaskTitle';
@@ -6,6 +7,7 @@ import TaskTitle from './features/task/title/TaskTitle';
 function App() {
   return (
     <div>
+      <IconDisplay iconId={5} />
       <TaskTitle title="Task in progress" />
       <TaskDescription description="Work on a Challenge on devChallenges" />
       <StatusIndicator status="completed" />

@@ -18,7 +18,7 @@
   --color-red-300: #dd524c;
 
   --color-grey-100: #e3e8ef;
-  --color-grey-200: #00000033;
+  --color-grey-200: hsla(0, 0%, 0%, 0.2);
 
   --color-black-100: #000000;
 
