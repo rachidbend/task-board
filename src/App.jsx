@@ -1,35 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  return <div></div>;
 }
 
-export default App
+// 1) main view, shows a header, a list of tasks, and a add new task
+// 2) each task has an icon, title, description, and a status indicator
+// 3) when you click add new task, a new task is added with default title
+// 4) if you click on a task, a modal apears
+//  the modal allows you to change the title, description, icon, and status
+// there a re two buttons in the modal, a save, and delete
+// the save button saves your changes
+// the delete button deletes the task
+
+export default App;
