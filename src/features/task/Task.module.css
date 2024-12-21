@@ -1,0 +1,34 @@
+.task {
+  max-width: 50rem;
+  margin: 5rem auto;
+  padding: 1.2rem;
+  border-radius: var(--border-radius-standard);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.spacer {
+  grid-column: 2 /3;
+  justify-self: start;
+}
+
+.noStatus {
+  background-color: var(--color-grey-100);
+}
+
+.inProgress {
+  background-color: var(--color-yellow-100);
+}
+
+.wontDo {
+  background-color: var(--color-red-200);
+}
+.completed {
+  background-color: var(--color-green-100);
+}

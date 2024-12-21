@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-white: #f8fafc;
+
+  --color-yellow-100: #f5d565;
+  --color-yellow-200: #e9a23b;
+
+  --color-green-100: #a0ecb1;
+  --color-green-200: #32d657;
+
+  --color-red-100: #f5e8d5;
+  --color-red-200: #f7d4d3;
+  --color-red-300: #dd524c;
+
+  --color-grey-100: #e3e8ef;
+  --color-grey-200: hsla(0, 0%, 0%, 0.2);
+
+  --color-black-100: #000000;
+
+  --color-blue-100: #97a3b6;
+  --color-blue-200: #3662e3;
+
+  --border-radius-standard: 1.2rem;
+
+  --font-family-outfit: 'Outfit', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font-family-outfit);
+}
+
+body {
+  background-color: var(--color-white);
+  /* min-height: 100vh; */
+}
