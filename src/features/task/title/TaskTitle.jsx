@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-
+import styles from './TaskTitle.module.css';
 function TaskTitle({ title }) {
-  return <h3>{title}</h3>;
+  return <h3 className={`${styles.title}`}>{title}</h3>;
 }
 
 TaskTitle.propTypes = {

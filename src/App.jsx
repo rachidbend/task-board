@@ -1,9 +1,13 @@
 import './App.css';
 import StatusIndicator from './components/statusIndicator/StatusIndicator';
+import TaskDescription from './features/task/desciption/TaskDescription';
+import TaskTitle from './features/task/title/TaskTitle';
 
 function App() {
   return (
     <div>
+      <TaskTitle title="Task in progress" />
+      <TaskDescription description="Work on a Challenge on devChallenges" />
       <StatusIndicator status="completed" />
     </div>
   );

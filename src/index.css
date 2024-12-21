@@ -17,11 +17,22 @@
   --color-red-200: #f7d4d3;
   --color-red-300: #dd524c;
 
+  --color-grey-100: #e3e8ef;
+  --color-grey-200: #00000033;
+
+  --color-black-100: #000000;
+
+  --color-blue-100: #97a3b6;
+  --color-blue-200: #3662e3;
+
   --border-radius-standard: 1.2rem;
+
+  --font-family-outfit: 'Outfit', sans-serif;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: var(--font-family-outfit);
 }

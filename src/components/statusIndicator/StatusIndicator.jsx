@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './StatusIndicator.module.css';
 
-import PropTypes from 'prop-types';
-import styles from './StatusIndicator.module.css';
-
 /**
  * A StatusIndicator component that displays the status of a task
  * with a different background color and icon depending on the status
