@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-white: #f8fafc;
+
+  --color-yellow-100: #f5d565;
+  --color-yellow-200: #e9a23b;
+
+  --color-green-100: #a0ecb1;
+  --color-green-200: #32d657;
+
+  --color-red-100: #f5e8d5;
+  --color-red-200: #f7d4d3;
+  --color-red-300: #dd524c;
+
+  --border-radius-standard: 1.2rem;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}

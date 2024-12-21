@@ -1,7 +1,12 @@
 import './App.css';
+import StatusIndicator from './components/statusIndicator/StatusIndicator';
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <StatusIndicator status="completed" />
+    </div>
+  );
 }
 
 // 1) main view, shows a header, a list of tasks, and a add new task
