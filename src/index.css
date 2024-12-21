@@ -36,3 +36,8 @@ html {
   scroll-behavior: smooth;
   font-family: var(--font-family-outfit);
 }
+
+body {
+  background-color: var(--color-white);
+  /* min-height: 100vh; */
+}

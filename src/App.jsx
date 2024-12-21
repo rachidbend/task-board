@@ -2,15 +2,46 @@ import './App.css';
 import IconDisplay from './components/iconDisplay/IconDisplay';
 import StatusIndicator from './components/statusIndicator/StatusIndicator';
 import TaskDescription from './features/task/desciption/TaskDescription';
+import Task from './features/task/Task';
 import TaskTitle from './features/task/title/TaskTitle';
+
+const tasks = [
+  {
+    id: 1,
+    title: 'Task in progress',
+    description: '',
+    status: 'in-progress',
+    iconId: 1,
+  },
+  {
+    id: 2,
+    title: 'Task completed',
+    description: '',
+    status: 'completed',
+    iconId: 4,
+  },
+  {
+    id: 3,
+    title: 'Task wont do',
+    description: '',
+    status: 'wont-do',
+    iconId: 6,
+  },
+  {
+    id: 4,
+    title: 'Task to do',
+    description: 'This task is new and has no status',
+    status: 'no-status',
+    iconId: 1,
+  },
+];
 
 function App() {
   return (
     <div>
-      <IconDisplay iconId={5} />
-      <TaskTitle title="Task in progress" />
-      <TaskDescription description="Work on a Challenge on devChallenges" />
-      <StatusIndicator status="completed" />
+      {tasks.map(task => (
+        <Task key={task.id} task={task} />
+      ))}
     </div>
   );
 }

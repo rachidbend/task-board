@@ -5,24 +5,60 @@ import TaskDescription from './desciption/TaskDescription';
 import StatusIndicator from '../../components/statusIndicator/StatusIndicator';
 import styles from './Task.module.css';
 
-const task = {
-  id: 1,
-  title: 'this is a title',
-  description: 'this is a description',
-  status: 'in-progress',
-  iconId: 1,
-};
+/**
+ * Task component that displays a task with its details.
+ *
+ * @param {Object} props - Component properties
+ * @param {Object} props.task - Task object containing details
+ * @param {number} props.task.id - Unique identifier for the task
+ * @param {string} props.task.title - Title of the task
+ * @param {string} props.task.description - Description of the task
+ * @param {string} props.task.status - Status of the task
+ * @param {number} props.task.iconId - Icon identifier for the task
+ * @returns {JSX.Element|null} A JSX element representing the task or null if data is incomplete
+ */
 function Task({ task }) {
-  const { id, title, description, status, iconId } = task;
+  const { id, title, description, status, iconId } = task || {};
+
+  // Ensure essential task details are available
+  if (!id || !title || !status || !iconId) {
+    return null;
+  }
+
+  // Determine the status color based on the task status
+  let statusColor;
+  switch (status) {
+    case 'in-progress':
+      statusColor = styles.inProgress;
+      break;
+    case 'wont-do':
+      statusColor = styles.wontDo;
+      break;
+    case 'completed':
+      statusColor = styles.completed;
+      break;
+    case 'no-status':
+    default:
+      statusColor = styles.noStatus;
+      break;
+  }
+
+  // Render the task component with title, icon, status, and optional description
   return (
-    <div key={id}>
-      <IconDisplay iconId={iconId} />
-      <div>
+    <div className={`${styles.task} ${statusColor}`} key={id}>
+      <div className={`${styles.container}`}>
+        <IconDisplay iconId={iconId} />
+
         <TaskTitle title={title} />
 
-        {description && <TaskDescription description={description} />}
+        <StatusIndicator status={status} />
+
+        {description && (
+          <div className={`${styles.spacer}`}>
+            <TaskDescription description={description} />
+          </div>
+        )}
       </div>
-      <StatusIndicator status={status} />
     </div>
   );
 }
