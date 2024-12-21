@@ -19,7 +19,8 @@ function StatusIndicator({ status }) {
     status === 'new' ||
     status === 'wont-do' ||
     status === 'in-progress' ||
-    status === 'completed';
+    status === 'completed' ||
+    'no-status';
 
   // Initialize variables for status color and icon path
   let statusColor;
@@ -44,6 +45,8 @@ function StatusIndicator({ status }) {
       iconPath = './Done_round_duotone.svg';
       break;
   }
+
+  if (status === 'no-status') return null;
 
   // Render the status indicator with the appropriate style and icon
   return (
