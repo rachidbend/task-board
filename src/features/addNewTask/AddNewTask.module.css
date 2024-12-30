@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  border: none;
+  border-radius: var(--border-radius-standard);
+  padding: var(--padding-standard);
+  background-color: var(--color-red-100);
+  cursor: pointer;
+}
+
+.text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}

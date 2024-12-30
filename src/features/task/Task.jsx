@@ -45,7 +45,7 @@ function Task({ task }) {
 
   // Render the task component with title, icon, status, and optional description
   return (
-    <div className={`${styles.task} ${statusColor}`} key={id}>
+    <button className={`${styles.task} ${statusColor}`} key={id}>
       <div className={`${styles.container}`}>
         <IconDisplay iconId={iconId} />
 
@@ -59,7 +59,7 @@ function Task({ task }) {
           </div>
         )}
       </div>
-    </div>
+    </button>
   );
 }
 

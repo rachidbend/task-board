@@ -25,9 +25,12 @@
   --color-blue-100: #97a3b6;
   --color-blue-200: #3662e3;
 
-  --border-radius-standard: 1.2rem;
+  --border-radius-standard: 1.4rem;
+  --border-radius-large: 1.8rem;
 
   --font-family-outfit: 'Outfit', sans-serif;
+
+  --padding-standard: 1.4rem;
 }
 
 html {
@@ -40,4 +43,8 @@ html {
 body {
   background-color: var(--color-white);
   /* min-height: 100vh; */
+}
+
+.App {
+  min-height: 100vh;
 }

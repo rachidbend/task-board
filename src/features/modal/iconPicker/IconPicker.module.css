@@ -1,0 +1,36 @@
+.field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border: none;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-color: var(--color-grey-100);
+  border-radius: var(--border-radius-standard);
+  cursor: pointer;
+  transition: background-color 0.26s ease-in-out;
+}
+
+.label:hover {
+  background-color: var(--color-grey-200);
+}
+
+.input:checked + .label {
+  background-color: var(--color-yellow-100);
+}
+
+.input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.inputContainer {
+}
