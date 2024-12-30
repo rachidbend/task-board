@@ -46,6 +46,7 @@ function StatusIndicator({ status }) {
       break;
   }
 
+  // If status is no-status to indicate that the status of a task is new and unedited
   if (status === 'no-status') return null;
 
   // Render the status indicator with the appropriate style and icon

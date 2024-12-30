@@ -1,0 +1,14 @@
+.container {
+  max-width: 55rem;
+  margin: 0rem auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

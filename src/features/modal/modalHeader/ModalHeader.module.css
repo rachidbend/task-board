@@ -1,0 +1,15 @@
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+}
+
+.closeButton {
+  cursor: pointer;
+}
+
+.closeIcon {
+}
